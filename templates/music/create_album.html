@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<!-- spacer -->
+{% block content %}
+<h2>
+  This is create_album.html where I'm going to render my form for creating
+  albums
+</h2>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Save</button>
+</form>
+
+<!-- spacer -->
+{% endblock %}
